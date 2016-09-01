@@ -19,6 +19,26 @@
         android:layout_height="wrap_content"
         android:text="Test"
         android:id="@+id/btnTest"
+        android:clickable="true"
+        android:onClick="sendTest"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Test Applicatie"
+        android:id="@+id/textView"
+        android:layout_above="@+id/btnTest"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="53dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/EXTRA_MESSAGE"
+        android:layout_alignBottom="@+id/btnTest"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/textView" />
 </RelativeLayout>
